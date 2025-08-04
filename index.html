@@ -1,1 +1,140 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Thomas Pinkava</title>
+
+
+    <style>
+
+        #layoutGrid{
+            font-family: Arial, Helvetica, sans-serif;
+            display : grid;
+            grid-template-columns : 2fr 1fr;
+            grid-template-rows : auto auto auto auto;
+            gap : 10px;
+            background-color : white;
+            padding-top : 50px;   
+            padding-right : 100px;   
+            padding-bottom : 30px;   
+            padding-left : 100px;   
+        }
+
+        a:link {
+            color : grey;
+        }
+
+        a:visited {
+          color: grey;
+        }
+
+        a:hover {
+            color : lightgrey;
+        }
+
+        
+
+        #nameTag {
+            text-align: center;
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        #drivel {
+            text-align: left;
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        #linkSet {
+            text-align: center;
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+            display: flex;
+            justify-content: center;
+            color : grey;
+        }
+
+        #picture {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 3;
+        }
+
+        #picture > img {
+            border-radius : 8px;
+            width : 100%;
+            height : auto;
+        }
+
+        #publications {
+            text-align: left;
+            grid-column: 1 / span 2;
+            grid-row: 4 / span 1;
+        }
+
+        .publication {
+            display : flex;
+        }
+
+        .publication > img {
+            border-radius : 8px;
+            width:9em;
+            padding-right: 1em;
+            height : auto;
+        }
+
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div id="layoutGrid">
+
+        <div id="nameTag">
+            <h1>Thomas Pinkava</h1>
+        </div>
+
+        <div id="drivel">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+        <div id="linkSet">
+            <a href="https://github.com/pinkavat", style="padding-right: 1em;">GitHub</a>  |  
+            <a href="resume.pdf", style="padding-right: 1em; padding-left: 1em;">CV</a>  |  
+            <a href="https://www.linkedin.com/in/pinkavat/", style="padding-left: 1em;">LinkedIn</a>
+        </div>
+
+
+        <div id="picture">
+            <img src="Self.JPG", alt="A picture of a can of soup lying on its side">
+        </div>
+
+    
+        <div id="publications">
+
+            <h2>Publications</h2>
+
+            <div class="publication">
+                <img src="aies_thumb.png", alt="A picture of two sheep standing in a field">
+                <div>
+                    <b>A Model- and Data-Agnostic Debiasing System for Achieving Equalized Odds</b><br>
+                    Pinkava, T.; McFarland, J.; Mashhadi, A.<br>
+                    <i>Proceedings of the 2024 AAAI/ACM Conference on AI, Ethics, and Society (AIES '24)</i><br>
+                    <a href="https://github.com/pinkavat/aies_2024_paper/blob/master/aies_2024_pinkavat_cameraready-5.pdf", style="padding-right: 0.5em;">paper</a>
+                    <a href="https://github.com/pinkavat/rl_debiaser">code</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
