@@ -59,6 +59,7 @@
         #picture {
             grid-column: 2 / span 1;
             grid-row: 1 / span 3;
+            align-content:center;
         }
 
         #picture > img {
@@ -77,7 +78,7 @@
             display : flex;
         }
 
-        .lineItem > img {
+        .lineItem > a >  img {
             border-radius : 8px;
             width:9em;
             padding-right: 1em;
@@ -103,7 +104,7 @@
 
         <div id="drivel">
            
-            Hello! I'm Thomas Pinkava, a recent graduate from the University of Washington with a Master's Degree in Computer Science.
+            Hello! I'm Thomas Pinkava, a recent graduate from the University of Washington with a Master's Degree in Computer Science, specializing in Machine Learning.
             I earned a Bachelor's from Grinnell College -- also in CS -- and have a variety of computing skills, from developing games in Godot
             and C++ to working on Reinforcement-Learning ML Agents. 
             
@@ -135,12 +136,14 @@
             <h2>Publications</h2>
 
             <div class="lineItem">
-                <img src="aies_thumb.png", alt="A picture of two sheep standing in a field">
+                <a href="https://doi.org/10.1609/aies.v7i1.31709">
+                    <img src="aies_thumb.png", alt="A picture of two sheep standing in a field">
+                </a>
                 <div>
                     <b>A Model- and Data-Agnostic Debiasing System for Achieving Equalized Odds</b><br>
                     Pinkava, T.; McFarland, J.; Mashhadi, A.<br>
                     <i>Proceedings of the 2024 AAAI/ACM Conference on AI, Ethics, and Society (AIES '24)</i><br>
-                    <a href="https://github.com/pinkavat/aies_2024_paper/blob/master/aies_2024_pinkavat_cameraready-5.pdf", style="padding-right: 0.5em;">paper</a>
+                    <a href="https://doi.org/10.1609/aies.v7i1.31709", style="padding-right: 0.5em;">paper</a>
                     <a href="https://github.com/pinkavat/rl_debiaser">code</a>
                 </div>
             </div>
